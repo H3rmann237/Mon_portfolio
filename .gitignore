@@ -1,0 +1,8 @@
+.vscode/
+.DS_Store
+Thumbs
+dist/
+node_modules/
+package-lock.json
+package.json
+.gitignore
