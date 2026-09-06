@@ -3,36 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/output.css" rel="stylesheet">
     <title>Hermann</title>
 </head>
-<body>
-    <header>
+<body class="flex flex-col border my-10 mx-30">
+    <header class="border flex justify-between">
         <img src="" alt="logo">
-        <nav>
-            <a href="">A propos</a>
-            <a href="">Experience</a>
-            <a href="">Compétence</a>
-            <a href="">Project</a>
+        <nav class="space-x-4">
+            <a href="#accueil">Accueil</a>
+            <a href="#a-propos">A propos</a>
+            <a href="#experience">Experiences</a>
+            <a href="#competence">Compétence</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Me contacter</a>
         </nav>
-        <a href="">Me contacter</a>
     </header>
     <main>
-        <section id="a-propos">
-
-        </section>
-        <section id="experience">
-
-        </section>
-        <section id="compétence">
-
-        </section>
-        <section id="Project">
-            <h2>Mes réalisation</h2>
-            <div class="flex p-2">
-                <img src="" alt="img-projetc">
-                <h3>Nom du project</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, architecto.</p>
+        <section class="border-3 border-b-emerald-700 flex justify-between px-10 py-50" id="accueil">
+            <div>
+                <h1 class="text-5xl font-black">Salut👋,<br> je m'appelle <br><span>Sam Hermann</span><br>je fait des trucs sur le net</h1>
             </div>
+            <img src="" alt="moi">
+        </section>
+        <section class="border-3 border-b-emerald-700 space-y-5 py-5" id="a-propos">        
+            <h2 class="text-3xl font-semibold">A propos de moi</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit dignissimos aut unde? Voluptates, itaque aliquid. Voluptatum libero doloribus dolorum nobis veritatis beatae tempore, perferendis vel nihil voluptates pariatur inventore, esse odio nisi eius culpa, voluptatem accusamus deleniti officiis necessitatibus aliquam iure molestiae? Iusto a corrupti, voluptates nulla sed iure laborum! Asperiores, nihil quas. Commodi neque reprehenderit dicta facilis? Exercitationem accusamus esse molestias consectetur quod mollitia libero at vel laudantium ad ullam vitae quos ipsam, unde neque, similique odio numquam nihil inventore aut! Dolorum necessitatibus pariatur assumenda alias porro dolores laborum? Itaque nihil voluptatum ratione commodi voluptatem mollitia, enim incidunt molestiae!</p>
+        </section>
+        <section  class="border-3 border-b-emerald-700 space-y-5 py-5" id="experience">
+            <h2 class="text-3xl font-semibold">Experiences de travail</h2>
+            <div class="grid ">
+                <div>
+                    <div>
+                        <h3>Dev junior chez CEG-informatique<h3>
+                        <p>Date</p>
+                    </div>
+                    <p>description du travail effectuer</p>
+                </div>
+            </div>
+        </section>
+        <section class="border-3 border-b-emerald-700 space-y-5 py-5" id="competence">
+            <h2 class="text-3xl font-semibold">Compétences</h2>
+            <div>
+                <img src="assets/images/html5-original 1.png" alt="HTML">
+                <img src="assets/images/css3-original 1.png" alt="CSS">
+                <img src="assets/images/tailwind.png" alt="TAILWINDS">
+                <img src="assets/images/github-black.png" alt="github">
+            </div>
+        </section>
+        <section class="border-3 border-b-emerald-700 space-y-5 py-5" id="project">
+            <h2 class="text-3xl font-semibold">Mes travaux</h2>
+            <div>
+                <div>
+                    <img src="" alt="image-du-projet">
+                    <h3>Mon Portfolio</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, esse.</p>
+                    <div>
+                        <div>html</div>
+                        <div>tailwinds css</div>
+                    </div>
+                    <div>
+                        <a href=""><img src="" alt="lien">Voir le site</a>
+                        <a href=""><img src="" alt="github">Voir le code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="border-3 border-b-emerald-700 space-y-5 py-5" id="contact">
+            <h2 class="text-3xl font-semibold">Me contacter</h2>
+            <form action="">
+                <label for="fname">Nom</label>
+                <input type="text" name="fname" placeholder="votre nom">
+                <label for="lname">Prenom</label>
+                <input type="text" name="nlame" placeholder="votre prénom">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="" placeholder="Votre email">
+                <label for="message">Votre message</label>
+                <textarea name="message" id="" placeholder="ecrivez-ici"></textarea>
+                <input type="submit" value="submit">
+            </form>
         </section>
     </main>
     <footer>
