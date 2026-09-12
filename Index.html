@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/output.css" rel="stylesheet">
+    <title>Hermann</title>
+</head>
+<body class="bg-mauve-300">
+    <header>
+        <nav>
+            <div class="flex flex-wrap justify-between p-4">
+                <a href="#accueil">
+                    <img src="" alt="logo">
+                </a>
+                <button type="button" class="inline items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary">
+                    <img src="assets/images/menu.png" alt="">
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar">
+                    <ul class="flex p-4 md:p-0 md:space-x-8">
+                        <li>
+                            <a href="#accueil" >Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#a-propos">A propos</a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experiences</a>
+                        </li>
+                        <li>
+                            <a href="#competence">Compétence</a>
+                        </li>
+                        <li>
+                            <a href="#project">Project</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Me contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="px-4">
+        <section class="flex justify-between px-10 py-20 md:py-50" id="accueil">
+            <div>
+                <h1 class="text-5xl font-black">Salut👋,<br> je m'appelle <br><spanclass="text-fuchsia-700">Sam Hermann</span><br>je fait des trucs sur le net</h1>
+            </div>
+            <img src="" alt="moi" class="hidden md:block">
+        </section>
+
+        <section class="space-y-5" id="a-propos">        
+            <h2 id="nom" class="text-3xl font-semibold">A propos de moi</h2>
+            <p class=" w-full">Diplômé en génie logiciel, je suis développeur en début de carrière. Je me forme actuellement en Full Stack Python/Django, avec un intérêt particulier pour le Machine Learning et l'analyse de données. Je construis mes compétences à travers des projets concrets.<br> Je suis à la recherche d'opportunités en tant que développeur, en local ou en remote, et toujours motivé à apprendre de nouvelles technologies.!</p>
+        </section>
+
+        <section  class="space-y-5 py-5" id="experience">
+            <h2 class="text-3xl font-semibold">Experiences de travail</h2>
+            <div class="grid ">
+                <div class="p-6 border rounded-xl">
+                    <div class="mb-3">
+                        <h3 class="text-2xl font-semibold tracking-tight text-heading leading-8">Dev junior chez CEG-informatique<h3>
+                        <p class="font-serif"></p>
+                    </div>
+                    <p>implementaion d'un systeme de géneration de cv à partir des données entrée par l'utilisateur</p>
+                </div>
+            </div>
+        </section>
+        <section class="space-y-5 py-5 flex flex-col self-center" id="competence">
+            <h2 class="text-3xl font-semibold">Compétences</h2>
+            <div class="flex gap-5   flex-wrap">
+                <img src="assets/images/html5-original 1.png" alt="HTML">
+                <img src="assets/images/css3-original 1.png" alt="CSS">
+                <img src="assets/images/tailwind.png" alt="TAILWINDS">
+                <img src="assets/images/github-black.png" alt="github">
+            </div>
+        </section>
+
+        <section class="space-y-5 py-5" id="project">
+            <h2 class="text-3xl font-semibold">Mes travaux</h2>
+            <div class="grid projet-card">
+                <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs">
+                    <img class="rounded-base" src="" alt="image-du-projet">
+                    <h3 id="titre-port" class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading">Mon Portfolio</h3>
+                    <p class="mb-6">Il s'agit d'une page qui contient toutes les informations me concernant afin d'evaluer mon travail et me contacter</p>
+                    <div class="pb-5">
+                        <span class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">html</span>
+                        <span class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">tailwinds css</span>
+                    </div>
+                    <div>
+                        <a class="inline-flex border text-sm px-4 py-2.5 " href="">
+                            Voir le site
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-5 py-5" id="contact">
+            <h2 class="text-3xl font-semibold">Me contacter</h2>
+            <div>
+                <form action="" class="mb-6 space-y-4">
+                    <label for="fname" class="block mb-2.5 text-sm">Nom</label>
+                    <div class="relative">
+                        <input class="rounded-xl w-full border text-sm px-3 py-2.5" type="text" name="fname" placeholder="votre nom">
+                    </div>
+                    <label for="lname" class="block mb-2.5 text-sm">Prenom</label>
+                    <div class="relative">
+                        <input class="rounded-xl w-full border text-sm px-3 py-2.5" type="text" name="lname" placeholder="votre prénom">
+                    </div>
+                    <label for="email" class="block mb-2.5 text-sm">E-mail</label>
+                    <div class="relative">
+                        <input class="rounded-xl w-full border text-sm px-3 py-2.5" type="email" name="email" id="" placeholder="Votre email">
+                    </div>
+                    <label for="message" class="block mb-2.5 text-sm">Votre message</label>
+                    <div class="relative">
+                        <textarea class="rounded-xl w-full border text-sm px-3 py-2.5" rows="4" name="message" id="" placeholder="ecrivez-ici"></textarea>
+                    </div>
+                    <button type="submit" class="bg-fuchsia-700 w-full rounded-xl py-2.5">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script/script.js">
+
+    </script>
+</body>
+</html>
