@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,30 +13,32 @@
                 <a href="#accueil">
                     <img src="" alt="logo">
                 </a>
-                <button type="button" class="w-10 text-xl md:hidden">
-                    &#9776;
-                </button>
-
-                <ul id="mobile_menu" class="hidden flex-col gap-3 px-4 pb-4 text-sm text-slate-300 sm:hidden">
-                    <li>
-                        <a href="#accueil" >Accueil</a>
-                    </li>
-                    <li>
-                        <a href="#a-propos">A propos</a>
-                    </li>
-                    <li>
-                        <a href="#experience">Experiences</a>
-                    </li>
-                    <li>
-                        <a href="#competence">Compétence</a>
-                    </li>
-                    <li>
-                        <a href="#project">Project</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Me contacter</a>
-                    </li>
-                </ul>
+                <div class="flex flex-col relative">
+                    <button type="button" id="button_menu" class="w-10 text-xl md:hidden">
+                        &#9776;
+                    </button>
+                    
+                    <ul id="mobile_menu" class="hidden flex-col space-x-5 gap-5 px-4 pb-4 pt-4 mt-2 text-sm bg-slate-600 absolute top-full right-0 text-slate-300 rounded-lg md:hidden">
+                        <li>
+                            <a href="#accueil" >Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#a-propos">A propos</a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experiences</a>
+                        </li>
+                        <li>
+                            <a href="#competence">Compétence</a>
+                        </li>
+                        <li>
+                            <a href="#project">Project</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Me contacter</a>
+                        </li>
+                    </ul>
+                </div>
                     
                 <div class="hidden w-full md:block md:w-auto" id="navbar">
                     <ul class="flex p-4 md:p-0 md:space-x-8">
@@ -99,6 +101,7 @@
                 <img src="assets/images/tailwind.png" alt="TAILWINDS">
                 <img src="assets/images/github-white.png" alt="github">
                 <img src="assets/images/javascript-original 1.png" alt="">
+                <img src="assets/images/python-original 1.png" alt="">
             </div>
         </section>
 
@@ -126,21 +129,31 @@
             <h2 class="text-3xl font-semibold">Me contacter</h2>
             <div>
                 <form action="" class="mb-6 space-y-4">
-                    <label for="fname" class="block mb-2.5 text-sm">Nom</label>
-                    <div class="">
-                        <input class="bg-slate-800 rounded-xl w-full border text-sm px-3 py-2.5" type="text" name="fname" placeholder="votre nom" required>
+                    <div class="block md:grid md:grid-cols-2 md:gap-3.5">
+                        <div>
+                            <label for="fname" class="block mb-2.5 text-sm">Nom</label>
+                            <div class="">
+                                <input class="bg-slate-800 rounded-xl w-full border text-sm px-3 py-2.5" type="text" name="fname" placeholder="votre nom" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="lname" class="block mb-2.5 text-sm">Prenom</label>
+                            <div class="">
+                                <input class="bg-slate-800 rounded-xl w-full border text-sm px-3 py-2.5" type="text" name="lname" placeholder="votre prénom" required>
+                            </div>
+                        </div>
                     </div>
-                    <label for="lname" class="block mb-2.5 text-sm">Prenom</label>
-                    <div class="">
-                        <input class="bg-slate-800 rounded-xl w-full border text-sm px-3 py-2.5" type="text" name="lname" placeholder="votre prénom" required>
+                    <div>
+                        <label for="email" class="block mb-2.5 text-sm">E-mail</label>
+                        <div class="">
+                            <input class="bg-slate-800 rounded-xl w-full border text-sm px-3 py-2.5" type="email" name="email" id="" placeholder="Votre email " required>
+                        </div>
                     </div>
-                    <label for="email" class="block mb-2.5 text-sm">E-mail</label>
-                    <div class="">
-                        <input class="bg-slate-800 rounded-xl w-full border text-sm px-3 py-2.5" type="email" name="email" id="" placeholder="Votre email " required>
-                    </div>
-                    <label for="message" class="block mb-2.5 text-sm">Votre message</label>
-                    <div class="">
-                        <textarea class="bg-slate-800 rounded-xl w-full border text-sm px-3 py-2.5" rows="4" name="message" id="" placeholder="ecrivez-ici"></textarea>
+                    <div>
+                        <label for="message" class="block mb-2.5 text-sm">Votre message</label>
+                        <div class="">
+                            <textarea class="bg-slate-800 rounded-xl w-full border text-sm px-3 py-2.5" rows="4" name="message" id="" placeholder="ecrivez-ici"></textarea>
+                        </div>
                     </div>
                     <button type="submit" class="bg-fuchsia-700 w-full rounded-xl py-2.5">Envoyer</button>
                 </form>
@@ -150,8 +163,6 @@
     <footer>
 
     </footer>
-    <script src="script/script.js">
-
-    </script>
+    <script src="script/script.js"></script>
 </body>
 </html>
