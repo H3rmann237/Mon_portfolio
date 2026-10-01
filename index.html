@@ -8,61 +8,33 @@
 </head>
 <body class="bg-slate-950 text-slate-100">
     <header>
-        <nav class="bg-slate-800 m-5 rounded-2xl">
+        <nav class="bg-slate-800 m-5 rounded-2xl relative">
             <div class="flex flex-wrap justify-between p-4">
                 <a href="#accueil">
                     <img src="" alt="logo">
                 </a>
-                <div class="flex flex-col relative">
-                    <button type="button" id="button_menu" class="w-10 text-xl md:hidden">
-                        &#9776;
-                    </button>
-                    
-                    <ul id="mobile_menu" class="hidden flex-col space-x-5 gap-5 px-4 pb-4 pt-4 mt-2 text-sm bg-slate-600 absolute top-full right-0 text-slate-300 rounded-lg md:hidden">
-                        <li>
-                            <a href="#accueil" >Accueil</a>
-                        </li>
-                        <li>
-                            <a href="#a-propos">A propos</a>
-                        </li>
-                        <li>
-                            <a href="#experience">Experiences</a>
-                        </li>
-                        <li>
-                            <a href="#competence">Compétence</a>
-                        </li>
-                        <li>
-                            <a href="#project">Project</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Me contacter</a>
-                        </li>
-                    </ul>
-                </div>
-                    
-                <div class="hidden w-full md:block md:w-auto" id="navbar">
-                    <ul class="flex p-4 md:p-0 md:space-x-8">
-                        <li>
-                            <a href="#accueil" >Accueil</a>
-                        </li>
-                        <li>
-                            <a href="#a-propos">A propos</a>
-                        </li>
-                        <li>
-                            <a href="#experience">Experiences</a>
-                        </li>
-                        <li>
-                            <a href="#competence">Compétence</a>
-                        </li>
-                        <li>
-                            <a href="#project">Project</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Me contacter</a>
-                        </li>
-                    </ul>
-                </div>
+                <button type="button" id="button_menu" class="w-10 text-xl md:hidden">
+                    &#9776;
+                </button>
+                
+                <ul class="hidden md:flex md:p-0 md:space-x-8">
+                    <li><a href="#accueil" >Accueil</a></li>
+                    <li><a href="#a-propos">A propos</a></li>
+                    <li><a href="#experience">Experiences</a></li>
+                    <li><a href="#competence">Compétence</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Me contacter</a></li>
+                </ul>
             </div>
+
+            <ul id="mobile_menu" class="hidden flex-col space-x-5 gap-5 px-4 pb-4 pt-4 mt-2 text-sm bg-slate-600 absolute top-full right-0 text-slate-300 rounded-lg md:hidden">
+                <li><a href="#accueil" >Accueil</a></li>
+                <li><a href="#a-propos">A propos</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#competence">Compétence</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Me contacter</a></li>
+            </ul>
         </nav>
     </header>
     <main class="px-10 md:px-30 ">
