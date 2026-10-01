@@ -6,9 +6,9 @@
     <link href="styles/output.css" rel="stylesheet">
     <title>Hermann</title>
 </head>
-<body class="bg-slate-950 text-slate-100">
+<body class="bg-linear-to-r from-slate-950 to-violet-950 text-slate-100">
     <header>
-        <nav class="bg-slate-800 m-5 rounded-2xl relative">
+        <nav class="bg-slate-800 m-5 rounded-2xl md:mx-20 relative">
             <div class="flex flex-wrap justify-between p-4">
                 <a href="#accueil">
                     <img src="" alt="logo">
@@ -40,7 +40,7 @@
     <main class="px-10 md:px-30 ">
         <section class="flex justify-between px-10 py-20 md:py-50" id="accueil">
             <div>
-                <h1 class="text-5xl font-black">Salut👋,<br> je m'appelle <br><spanclass="text-fuchsia-700">Sam Hermann</span><br>je fais des trucs sur le net</h1>
+                <h1 class="text-5xl font-black">Salut👋,<br> je m'appelle <br><span class="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">Sam Hermann</span><br>je fais des trucs sur le net</h1>
             </div>
             <img src="" alt="moi" class="hidden md:block">
         </section>
@@ -67,13 +67,13 @@
         </section>
         <section class="space-y-5 py-5 flex flex-col self-center" id="competence">
             <h2 class="text-3xl font-semibold">Compétences</h2>
-            <div class="flex gap-5   flex-wrap">
-                <img src="assets/images/html5-original 1.png" alt="HTML">
-                <img src="assets/images/css3-original 1.png" alt="CSS">
-                <img src="assets/images/tailwind.png" alt="TAILWINDS">
-                <img src="assets/images/github-white.png" alt="github">
-                <img src="assets/images/javascript-original 1.png" alt="">
-                <img src="assets/images/python-original 1.png" alt="">
+            <div class="flex overflow-x-scroll gap-5 md:flex-wrap">
+                <img src="assets/images/html5-original 1.png" alt="HTML" class="w-25 h-25 md:w-40 md:h-auto">
+                <img src="assets/images/css3-original 1.png" alt="CSS" class="w-25 h-25 md:w-40 md:h-auto">
+                <img src="assets/images/tailwind.png" alt="TAILWINDS" class="w-25 h-25 md:w-40 md:h-auto">
+                <img src="assets/images/github-white.png" alt="github" class="w-25 h-25 md:w-40 md:h-auto">
+                <img src="assets/images/javascript-original 1.png" alt="javascript" class="w-25 h-25 md:w-40 md:h-auto">
+                <img src="assets/images/python-original 1.png" alt="Python" class="w-25 h-25 md:w-40 md:h-auto">
             </div>
         </section>
 
@@ -89,7 +89,7 @@
                         <span class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">tailwinds css</span>
                     </div>
                     <div>
-                        <a class="bg-fuchsia-700 border text-sm px-4 py-2.5 rounded-xl" href="">
+                        <a class="bg-fuchsia-700 border text-sm px-4 py-2.5 rounded-xl hover:bg-slate-300 hover:text-fuchsia-700" href="">
                             Voir le site
                         </a>
                     </div>
@@ -127,13 +127,13 @@
                             <textarea class="bg-slate-800 rounded-xl w-full border text-sm px-3 py-2.5" rows="4" name="message" id="" placeholder="ecrivez-ici"></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="bg-fuchsia-700 w-full rounded-xl py-2.5">Envoyer</button>
+                    <button type="submit" class="bg-fuchsia-700 w-full rounded-xl py-2.5 hover:bg-slate-300 hover:text-fuchsia-700">Envoyer</button>
                 </form>
             </div>
         </section>
     </main>
     <footer>
-
+        
     </footer>
     <script src="script/script.js"></script>
 </body>
